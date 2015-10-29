@@ -9,12 +9,12 @@ All of these implementations will be in python and therefore will utilize the py
 I would suggest to use python 2.7 since some of the other modules I will be using will not be compatible with the 3+ version.
 By default, ``pip`` and ``setuptools`` will already be installed however they will need to be upgraded: <br>
 
-For windows: <br>
+**For windows:** <br>
 ```
 python -m pip install -U pip setuptools
 ```
 
-For Linux or OSX: <br>
+**For Linux or OSX:** <br>
 ```
 pip install -U pip setuptools
 ```
