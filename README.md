@@ -35,3 +35,36 @@ pip install (Name of your wheel).whl
 ===
 ### Playing files
 
+Initialize:
+```python
+p = pyaudio.PyAudio()
+
+stream = p.open(format      = pyaudio.paInt16,
+                channels    = num_channels,
+                rate        = Fs,
+                input       = False,
+                output      = True )
+
+```
+
+Reading:
+```python
+input_string = wf.readframes(1)          # Get first frame
+while input_string != '':
+
+    # Convert string to number
+    input_tuple = struct.unpack('h', input_string)  # One-element tuple
+    input_value = input_tuple[0]                    # Number
+
+    # Compute output value
+    output_value = clip16(gain * input_value)    # Number
+
+    # Convert output value to binary string
+    output_string = struct.pack('h', output_value)  
+
+    # Write output value to audio stream
+    stream.write(output_string)                     
+
+    # Get next frame
+    input_string = wf.readframes(1) 
+```
