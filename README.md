@@ -2,9 +2,8 @@
 
 Multiple types of audio effects will be described and implemented in python.
 
-==
+===
 ### GETTING STARTED
-==
 
 All of these implementations will be in python and therefore will utilize the pyaudio module.
 I would suggest to use python 2.7 since some of the other modules I will be using will not be compatible with the 3+ version.
@@ -27,4 +26,6 @@ In order to install, simply download the wheel and move it to your current direc
 
 ``pip install (Name of your wheel).whl ``
 
+===
+### Playing files
 
