@@ -10,17 +10,17 @@ I would suggest to use python 2.7 since some of the other modules I will be usin
 By default, ``pip`` and ``setuptools`` will already be installed however they will need to be upgraded: <br>
 
 **For windows:** <br>
-```
+```sh
 python -m pip install -U pip setuptools
 ```
 
 **For Linux or OSX:** <br>
-```
+```sh
 pip install -U pip setuptools
 ```
 
 Now, in order to install the pyaudio module simply type the following into the terminal:
-```
+```sh
 pip install pyaudio
 ```
 
@@ -28,7 +28,7 @@ If you run into an error, you may have to install manually by downloading the co
 The wheels can be found at http://www.lfd.uci.edu/~gohlke/pythonlibs/ <br>
 
 In order to install, simply download the wheel and move it to your current directory. Then type:
-```
+```sh
 pip install (Name of your wheel).whl
 ```
 
