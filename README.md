@@ -47,7 +47,7 @@ stream = p.open(format      = pyaudio.paInt16,
 
 ```
 
-Reading:
+Reading/Editing/Playing:
 ```python
 input_string = wf.readframes(1)          # Get first frame
 while input_string != '':
