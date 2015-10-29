@@ -54,10 +54,10 @@ while input_string != '':
 
     # Convert string to number
     input_tuple = struct.unpack('h', input_string)  # One-element tuple
-    input_value = input_tuple[0]                    # Number
+    input_value = input_tuple[0]                    # Extract number from tuple
 
     # Compute output value
-    output_value = clip16(gain * input_value)    # Number
+    output_value = gain * input_value               # Multiple value by set gain
 
     # Convert output value to binary string
     output_string = struct.pack('h', output_value)  
