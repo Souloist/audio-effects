@@ -1,24 +1,41 @@
-from math import cos, pi 
+
+from math import cos 
+from math import pi 
 import pyaudio
 import struct
 
 # 16 bit/sample
 
 # Fs : Sampling frequency (samples/second)
-Fs = 32000
-# Try Fs = 16000 and 32000 
+Fs = 8000
+# Fs = 16000   
+# Fs = 32000
 
-T = 1       # T : Duration of audio to play (seconds)
+T = 2       # T : Duration of audio to play (seconds)
 N = T*Fs    # N : Number of samples to play
 
+# Pole location
+f1 = 400
+om1 = 2.0*pi * float(f1)/Fs
+
+Ta = 1.0    # Ta : Time till amplitude profile decays to 1% (in seconds)
+# Ta = 0.006
+r = 0.01**(1.0/(Ta*Fs))
+
+print 'Fs = ', Fs
+print 'r = ', r
+
 # Difference equation coefficients
-a1 = -1.8999
-a2 = 0.9977
+a1 = -2*r*cos(om1)
+a2 = r**2
+
+print 'a1 = ', a1
+print 'a2 = ', a2
 
 # Initialization
 y1 = 0.0
 y2 = 0.0
-gain = 10000.0
+gain = 1000.0
 
 p = pyaudio.PyAudio()
 stream = p.open(format = pyaudio.paInt16,  

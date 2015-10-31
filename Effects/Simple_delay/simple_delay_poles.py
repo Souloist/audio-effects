@@ -1,19 +1,31 @@
-from math import cos, pi 
+from math import cos 
+from math import pi 
 import pyaudio
 import struct
 
 # 16 bit/sample
 
 # Fs : Sampling frequency (samples/second)
-Fs = 32000
-# Try Fs = 16000 and 32000 
+Fs = 8000
+# Fs = 16000   
+# Fs = 32000
 
-T = 1       # T : Duration of audio to play (seconds)
+T = 2       # T : Duration of audio to play (seconds)
 N = T*Fs    # N : Number of samples to play
 
+# Pole location
+f1 = 800
+om1 = 2.0*pi * float(f1)/Fs
+r = 0.999      # Try other values, 0.998, 0.9995, 1.0
+r = float(r)    # Ensure r is a float
+# Qustion: how to set r to obtain desired time constant?
+
 # Difference equation coefficients
-a1 = -1.8999
-a2 = 0.9977
+a1 = -2*r*cos(om1)
+a2 = r**2
+
+print 'a1 = ', a1
+print 'a2 = ', a2
 
 # Initialization
 y1 = 0.0
