@@ -2,10 +2,10 @@
 ===
 Signifigance of wavefile properties 
 
-*```.getnchannels()```      - This returns the number of channels in the file (1 = mono, 2 = stereo)
-*```.getframerate()```      - This returns the sampling rate or the number of frames played per second
-*```.getnframes()```       	- This returns the total number of frame in the recording
-*```.getsampwidth()```      - This returns the bit depth in bytes (ex. 16 bit recording will have a bit depth of 2 bytes)
+* ```.getnchannels()```      - This returns the number of channels in the file (1 = mono, 2 = stereo)
+* ```.getframerate()```      - This returns the sampling rate or the number of frames played per second
+* ```.getnframes()```       	- This returns the total number of frame in the recording
+* ```.getsampwidth()```      - This returns the bit depth in bytes (ex. 16 bit recording will have a bit depth of 2 bytes)
 ===
 Importance of pack/unpack function
 
