@@ -30,10 +30,12 @@ Circuit diagram
 Circuit diagram
 
 Why is interpolation needed for the vibrato effect?
+
 ===
 
 ## Delay with feedback
 Circuit diagram
 
 What values make this system unstable?
+
 ===
