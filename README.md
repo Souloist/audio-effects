@@ -26,12 +26,12 @@ python -m pip install -U pip setuptools
 
 **For Linux or OSX:** <br>
 ```sh
-pip install -U pip setuptools
+sudo pip install -U pip setuptools
 ```
 
 Now, in order to install the pyaudio module simply type the following into the terminal:
 ```sh
-pip install pyaudio
+sudo pip install pyaudio
 ```
 
 If you run into an error, you may have to install manually by downloading the corresponding wheel and using pip.
