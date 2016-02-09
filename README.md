@@ -82,7 +82,8 @@ while input_string != '':
 Using Pyaudio
 ---
 
-Effects
+# Effects
+Amplitude modulation, filtering, frequency modulation, ping-pong, reverb
 ---
 
 Blocking
