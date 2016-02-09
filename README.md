@@ -77,14 +77,14 @@ while input_string != '':
     input_string = wf.readframes(1) 
 ```
 
-#Using Pyaudio
+# Using Pyaudio
 
 # Effects
+
 Amplitude modulation, filtering, frequency modulation, ping-pong, reverb
----
 
-#Blocking
+# Blocking
 
-#Callback
+# Callback
 
-#Visualization with Pyplot
+# Visualization with Pyplot
