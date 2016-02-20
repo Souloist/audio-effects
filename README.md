@@ -28,6 +28,12 @@ python -m pip install -U pip setuptools
 sudo pip install -U pip setuptools
 ```
 
+**For those with faith:** <br>
+You can download this [python script](https://github.com/Souloist/Audio-Effects/blob/master/pip-lazy/get-pip.py) which should install pip upon running:
+```sh
+python get-python.py
+```
+
 Now, in order to install the pyaudio module simply type the following into the terminal:
 ```sh
 sudo pip install pyaudio
