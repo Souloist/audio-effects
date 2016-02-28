@@ -1,18 +1,18 @@
-##Audio Effects
+# Audio Effects
 
 Multiple types of audio effects will be described and implemented in python.
 
-## Table of Contents
+**Table of Contents**
 
-- [Getting Started](https://github.com/Souloist/Audio-Effects#Getting-Started)
-- [Playing Files](https://github.com/Souloist/Audio-Effects#Playing-Files)
-- [Using Pyaudio](https://github.com/Souloist/Audio-Effects#Using-Pyaudio)
-- [Effects](https://github.com/Souloist/Audio-Effects#Effects)
-- [Blocking](https://github.com/Souloist/Audio-Effects#Blocking)
-- [Callback](https://github.com/Souloist/Audio-Effects#Callback)
-- [Visualization with Pyplot](https://github.com/Souloist/Audio-Effects#Visualization-with-Pyplot)
+- [Getting Started](#Getting-Started)
+- [Playing Files](#Playing-Files)
+- [Using Pyaudio](#Using-Pyaudio)
+- [Effects](#Effects)
+- [Blocking](#Blocking)
+- [Callback](#Callback)
+- [Visualization with Pyplot](#Visualization-with-Pyplot)
 
-#Getting Started
+## Getting Started
 
 All of these implementations will be in python and therefore will utilize the pyaudio module.
 I would suggest to use python 2.7 since some of the other modules I will be using will not be compatible with the 3+ version.
@@ -47,7 +47,7 @@ In order to install, simply download the wheel and move it to your current direc
 pip install (Name of your wheel).whl
 ```
 
-#Playing files
+## Playing files
 
 Initialize:
 ```python
@@ -83,14 +83,14 @@ while input_string != '':
     input_string = wf.readframes(1) 
 ```
 
-# Using Pyaudio
+## Using Pyaudio
 
-# Effects
+## Effects
 
 Amplitude modulation, filtering, frequency modulation, ping-pong, reverb
 
-# Blocking
+## Blocking
 
-# Callback
+## Callback
 
-# Visualization with Pyplot
+## Visualization with Pyplot
