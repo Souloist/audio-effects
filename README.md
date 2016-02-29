@@ -4,13 +4,13 @@ Multiple types of audio effects will be described and implemented in python.
 
 **Table of Contents**
 
-- [Getting Started](#Getting-Started)
-- [Playing Files](#Playing-Files)
-- [Using Pyaudio](#Using-Pyaudio)
-- [Effects](#Effects)
-- [Blocking](#Blocking)
-- [Callback](#Callback)
-- [Visualization with Pyplot](#Visualization-with-Pyplot)
+- [Getting Started](#getting-started)
+- [Playing Files](#playing-files)
+- [Using Pyaudio](#using-pyaudio)
+- [Effects](#effects)
+- [Blocking](#blocking)
+- [Callback](#callback)
+- [Visualization with Pyplot](#visualization-with-Pyplot)
 
 ## Getting Started
 
