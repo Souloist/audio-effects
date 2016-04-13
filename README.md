@@ -87,7 +87,12 @@ while input_string != '':
 
 ## Effects
 
-Amplitude modulation, filtering, frequency modulation, ping-pong, reverb
+- [Amplitude modulation](https://github.com/Souloist/Audio-Effects/tree/master/Effects/Amplitude_Modulation)
+- [Complex Amplitude modulation](https://github.com/Souloist/Audio-Effects/tree/master/Effects/Complex_Amplitude_Modulation)
+- [Delay](https://github.com/Souloist/Audio-Effects/tree/master/Effects/Simple_delay)
+- [Delay with Feedback](https://github.com/Souloist/Audio-Effects/tree/master/Effects/delay_with_feedback)
+- [Ping-pong effect](https://github.com/Souloist/Audio-Effects/tree/master/Effects/Ping_Pong_Effect)
+- [Virbrato](https://github.com/Souloist/Audio-Effects/tree/master/Effects/Vibrato)
 
 ## Blocking
 
